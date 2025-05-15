@@ -1,0 +1,22 @@
+﻿@model Buoi1.Models.Student
+
+<h2>Đăng ký chuyên ngành</h2>
+
+<form asp-action="ShowKQ" method="post">
+    <p>MSSV: <input asp-for="MSSV" /></p>
+    <p>Họ tên: <input asp-for="HoTen" /></p>
+    <p>Điểm TB: <input asp-for="DiemTB" /></p>
+
+    <p>
+        Chuyên ngành:
+        <select asp-for="ChuyenNganh">
+            <option>CNPM</option>
+            <option>HTTT</option>
+            <option>ANM</option>
+            <option>TTNT</option>
+            <option>MMT</option>
+        </select>
+    </p>
+
+    <button type="submit">Đăng ký</button>
+</form>
